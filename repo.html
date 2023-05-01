@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Github API Search</title>
+    <link rel="stylesheet" href="repo.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/emojione@3.1.2/lib/js/emojione.min.js"></script>
+  
+    
+  </head>
+  <body>
+    <header>
+      <h1>Github API Search</h1>
+      
+    
+
+    <main>
+      <form id="search-form">
+        <label for="search-input">Search Repositories:</label>
+        <input type="text" id="search-input" name="search-input" required />
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="results-container"></div>
+
+      <div id="pagination-container"></div>
+
+      <p id="error-message"></p>
+    </main>
+
+    <br>
+
+    <div class="container">
+		<h1 class="animate">Github API Stats</h1>
+		<p class="animate">Enter a Github repository to get some stats:</p>
+		<form class="animate">
+			<label for="owner">Owner:</label>
+			<input type="text" id="owner" name="owner"><br><br>
+			<label for="repo">Repository Name:</label>
+			<input type="text" id="repo" name="repo"><br><br>
+			<button type="button" onclick="getRepoStats()">Get Stats</button>
+      
+		</form>
+		<div id="stats-container"></div>
+	</div>
+
+    <br>
+
+    </header>
+
+    <script src="repo.js"></script>
+  </body>
+</html>
